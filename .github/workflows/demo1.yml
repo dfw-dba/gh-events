@@ -2,10 +2,12 @@ name: Events Demo 1
 on: 
   workflow_dispatch:
   push:
+    paths-ignore:
+    - '.github/workflows/*'
     branches:
       - main
       - dev
-      - 'featuer/**'
+      - 'feature/**'
 
   pull_request:
     paths-ignore:
